@@ -44,6 +44,23 @@ function Header() {
             </LinkContainer>
           </span>
 
+          <span style={{ fontFamily: "system-ui", fontWeight: "900" }}>
+            <LinkContainer to="/">
+              <Nav.Link>
+                <span
+                  className="navbar-brand"
+                  style={{
+                    fontFamily: "system-ui",
+                    fontSize: "30px",
+                    fontWeight: "900",
+                  }}
+                >
+                  Add Data
+                </span>
+              </Nav.Link>
+            </LinkContainer>
+          </span>
+
           <button
             className="navbar-toggler"
             type="button"

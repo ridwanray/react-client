@@ -145,8 +145,8 @@ function HomeScreen({history }) {
                   value={complete_status}
 
                    >
-                    <option value="true">Completed</option>
-                    <option value="false">Not Completed</option>
+                    <option value="True">Completed</option>
+                    <option value="False">Not Completed</option>
                   </select>
                    
                     <div className="input-group-prepend">

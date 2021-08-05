@@ -32,7 +32,7 @@ export const getDashboardDataInfo = () => async (dispatch, getState) => {
       },
     };
 
-    const { data } = await axios.get(`http://hommiespace-env.us-west-2.elasticbeanstalk.com/api/all/`, config);
+    const { data } = await axios.get(`//hommiespace-env.us-west-2.elasticbeanstalk.com/api/all/`, config);
     
     dispatch({
       type: DASHBOARD_DATAINFO_SUCCESS,
@@ -112,7 +112,7 @@ export const registerAccount = (email, password) => async (dispatch) => {
 
     const { data } = await axios.post(
     
-      `http://hommiespace-env.us-west-2.elasticbeanstalk.com/auth/newregister/`,
+      `//hommiespace-env.us-west-2.elasticbeanstalk.com/auth/newregister/`,
       {
         email: email,
         password: password,
