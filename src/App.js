@@ -1,23 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import {Switch } from "react-router-dom";
+import HomeScreen from "./screens/HomeScreen";
+import SignupScreen from "./screens/SignupScreen";
+import LoginScreen from "./screens/LoginScreen";
+import Header from "./components/Header";
+import Error404Screen from "./screens/Error404Screen";
+import DashboardScreen from "./screens/DashboardScreen";
+import { ToastContainer } from "react-toastify";
+import ErrorBoundary from "./components/ErrorBoundary";
+import ScrollToTopRoute from "./components/ScrollToTop";
 
-function App() {
+function App()
+{
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{ backgroundColor: "#FAFBFE" }}>
+      <main>
+     
+        <ErrorBoundary>
+        <ToastContainer />
+          <Header />
+  
+          <Switch>
+
+            <ScrollToTopRoute path="/" component={HomeScreen} exact />
+            <ScrollToTopRoute path="/login" component={LoginScreen} exact />
+            <ScrollToTopRoute path="/signup" component={SignupScreen} exact />
+            <ScrollToTopRoute path="/dashboard" component={DashboardScreen} exact />
+         
+            <ScrollToTopRoute component={Error404Screen} />
+          </Switch>
+        
+        </ErrorBoundary>
+      </main>
+     
     </div>
   );
 }
