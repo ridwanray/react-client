@@ -21,7 +21,7 @@ export const addNewDataToDB = (
     });
 
     const { data } = await axios.post(
-      `http://127.0.0.1:8000/api/create/`,
+      `http://hommiespace-env.us-west-2.elasticbeanstalk.com/api/create/`,
       {
         "location": `${location}`,
     "customer_name": `${customer_name}`,
