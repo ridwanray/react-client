@@ -12,8 +12,8 @@ function HomeScreen({history }) {
 
   const dispatch = useDispatch();
 
-  const userRegister = useSelector((state) => state.addDataToDbR);
-  const { error, loading, userInfo } = userRegister;
+  const addDataToDbR = useSelector((state) => state.addDataToDbR);
+  const { AddingDataLoading, DataAddedSuccessStatus } = addDataToDbR;
 
  
 
@@ -159,11 +159,11 @@ function HomeScreen({history }) {
 
                 <div className="mt-4">
                   <button
-                    disabled={loading && "disable"}
+                    disabled={AddingDataLoading && "disable"}
                     type="submit"
                     className="btn btn-block bg-dark text-white"
                   >
-                    {loading ? (
+                    {AddingDataLoading ? (
                       <div
                         className="spinner-border spinner-border-sm  text-light"
                         role="status"
@@ -171,7 +171,7 @@ function HomeScreen({history }) {
                         <span className="sr-only">Loading...</span>
                       </div>
                     ) : (
-                      "Create my account"
+                      "Add new data"
                     )}
                   </button>
                 </div>

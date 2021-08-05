@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Error404Screen from "./screens/Error404Screen";
 import DashboardScreen from "./screens/DashboardScreen";
 import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import ErrorBoundary from "./components/ErrorBoundary";
 import ScrollToTopRoute from "./components/ScrollToTop";
 
