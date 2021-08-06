@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/react-client/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/react-client/static/js/main.e7dcb9cb.chunk.js",
+    "main.js.map": "/react-client/static/js/main.e7dcb9cb.chunk.js.map",
+    "runtime-main.js": "/react-client/static/js/runtime-main.a742cf55.js",
+    "runtime-main.js.map": "/react-client/static/js/runtime-main.a742cf55.js.map",
+    "static/css/2.68b64559.chunk.css": "/react-client/static/css/2.68b64559.chunk.css",
+    "static/js/2.f5c63826.chunk.js": "/react-client/static/js/2.f5c63826.chunk.js",
+    "static/js/2.f5c63826.chunk.js.map": "/react-client/static/js/2.f5c63826.chunk.js.map",
+    "static/js/3.9d4c39a9.chunk.js": "/react-client/static/js/3.9d4c39a9.chunk.js",
+    "static/js/3.9d4c39a9.chunk.js.map": "/react-client/static/js/3.9d4c39a9.chunk.js.map",
+    "index.html": "/react-client/index.html",
+    "static/css/2.68b64559.chunk.css.map": "/react-client/static/css/2.68b64559.chunk.css.map",
+    "static/css/main.6dea0f05.chunk.css.map": "/react-client/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.f5c63826.chunk.js.LICENSE.txt": "/react-client/static/js/2.f5c63826.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a742cf55.js",
+    "static/css/2.68b64559.chunk.css",
+    "static/js/2.f5c63826.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.e7dcb9cb.chunk.js"
+  ]
+}
