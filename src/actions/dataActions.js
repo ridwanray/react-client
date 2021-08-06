@@ -21,13 +21,13 @@ export const addNewDataToDB = (
     });
 
     const { data } = await axios.post(
-      `//hommiespace-env.us-west-2.elasticbeanstalk.com/api/create/`,
+      `http://hommiespace-env.us-west-2.elasticbeanstalk.com/api/create/`,
       {
         "location": `${location}`,
     "customer_name": `${customer_name}`,
     "amount_paid": `${amount_paid}`,
     "volume_dispensed": `${volume_dispensed}`,
-    "complete_status": `${complete_status}`,
+    "complete_status": true
       },
      
     );

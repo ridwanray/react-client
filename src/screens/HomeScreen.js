@@ -7,7 +7,7 @@ function HomeScreen({history }) {
   const [customer_name, setCustomer] = useState("");
   const [amount_paid, setAmount] = useState("");
   const [volume_dispensed, setVolume] = useState("");
-  const [complete_status, setStatus] = useState("");
+  const [complete_status, setStatus] = useState("True");
 
 
   const dispatch = useDispatch();
@@ -19,7 +19,7 @@ function HomeScreen({history }) {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    console.log(location,customer_name,amount_paid,volume_dispensed,complete_status)
+    console.log(location,customer_name,amount_paid,volume_dispensed,complete_status,'ioak')
     dispatch(addNewDataToDB(location,customer_name,amount_paid,volume_dispensed,complete_status));
   };
 
@@ -149,11 +149,7 @@ function HomeScreen({history }) {
                     <option value="False">Not Completed</option>
                   </select>
                    
-                    <div className="input-group-prepend">
-                      <span className="input-group-text">
-                       
-                      </span>
-                    </div>
+                    
                   </div>
                 </div>
 
